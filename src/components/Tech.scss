@@ -1,0 +1,208 @@
+.tech {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(27, 29, 33) 0%, rgb(24, 25, 31) 33%, rgb(18, 18, 21) 70%, rgb(29, 31, 36) 100%);
+    .skills_box {
+        width: 100%;
+        max-width: 900px;
+        height: calc(100vh - 129px);
+        margin: 0 auto;
+        padding: 20px;
+        .box {
+            .sub_title {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 40px;
+                margin-bottom: 15px;
+                span {
+                    padding: 8px 25px;
+                    margin-left: 30px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 25px;
+                    border: 1px solid rgb(50, 50, 60);
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+                    color: #fff;
+                    letter-spacing: 1px;
+                }
+            }
+            .first {
+                margin-top: 0;
+            }
+            .icon_list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 130px;
+                padding: 0 30px;
+                .margin {
+                    margin-top: 15px;
+                }
+                nav {
+                    width: 100%;
+                    ul {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 35px;
+                        li {
+                            width: 90px;
+                            height: 90px;
+                            background-color: black;
+                            border: 1px solid rgb(30, 30, 35);
+                            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            transition: 0.3s;
+                            position: relative;
+                            overflow: hidden;
+                            img {
+                                width: 50px;
+                                margin-left: 20px;
+                                z-index: 2;
+                            }
+                            div {
+                                position: absolute;
+                                background-color: black;
+                                width: 180px;
+                                left: 150px;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                transition: 0.3s;
+                                
+                                p {
+                                    letter-spacing: 1px;
+                                    color: #fff;
+                                    &:first-child {
+                                        font-weight: 900;
+                                        font-size: 1.1rem;
+                                    }
+                                    &:last-child {
+                                        font-weight: 300;
+                                        font-size: 12px;
+                                        padding-right: 15px;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                width: 270px;
+                                height: 110px;
+                                div {
+                                    left: 88px;
+                                }
+                            }
+                        }
+                        .visivle {
+                            display: none;
+                        }
+                    }
+                }
+                .not_visible {
+                    margin-top: 15px;
+                }
+            }
+            .height {
+                min-height: 255px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    .tech {
+        height: auto;
+        .skills_box {
+            height: auto;
+            .box {
+                .sub_title {
+                    justify-content: center;
+                    span {
+                        margin-left: 0;
+                    }
+                }
+                .icon_list {
+                    nav {
+                        ul {
+                            width: 100%;
+                            display: grid !important;
+                            grid-template-columns: 1fr 1fr !important;
+                            gap: 20px 10px !important;
+                            place-items: center center !important;
+                            box-sizing: border-box !important;
+                            li {
+                                display: grid !important;
+                                grid-template-columns: 50px 1fr !important;
+                                place-items: center center !important;
+                                width: auto !important;
+                                min-width: 0;
+                                max-width: 400px !important;
+                                height: auto !important;
+                                min-height: 120px !important;
+                                padding: 10px 20px !important;
+                                border-radius: 0px !important;
+                                box-sizing: border-box !important;
+                                img {
+                                    margin-left: 0;
+                                }
+                                div {
+                                    position: relative !important;
+                                    left: auto !important;
+                                    width: 100% !important;
+                                    opacity: 1 !important;
+                                    margin-left: 15px !important;
+                                }
+                            }
+                            .visible {
+                                display: block !important;
+                            }
+                        }
+                    }
+                    .not_visible {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .tech {
+        height: auto;
+        .skills_box {
+            height: auto;
+            padding: 0 !important;
+            .box {
+                .sub_title {
+                    margin-bottom: 20px !important;
+                }
+                .icon_list {
+                    nav {
+                        ul {
+                            grid-template-columns: 1fr !important;
+                            gap: 0 !important;
+                            li {
+                                grid-template-columns: 70px 1fr !important;
+                                place-items: center center !important;
+                                max-width: none !important;
+                                min-width: 100% !important;
+                                min-height: 0px !important;
+                                padding: 15px 10px !important;
+                                padding-left: 0px !important;
+                                border-radius: 0px !important;
+                                border: 1px solid rgb(20, 20, 23);
+                                div {
+                                    margin-left: 5px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

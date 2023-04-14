@@ -1,0 +1,220 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+@keyframes fadeInUp2 {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(27, 29, 33) 0%, rgb(24, 25, 31) 33%, rgb(18, 18, 21) 70%, rgb(29, 31, 36) 100%);
+    position: relative;
+    font-weight: bold;
+    .main_font {
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        p {
+            font-size: 92px;
+        }
+        .middle {
+            display: flex;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 6px 8px black;
+            animation: fadeInUp 1s;
+            .blue {
+                color: rgb(30, 139, 222);
+            }
+            .white {
+                margin-left: 5px;
+                color: #fff;
+            }
+            .skyblue {
+                color: rgb(181, 244, 251);
+            } 
+            .lightgreen {
+                color: rgb(162, 234, 140);
+            }
+        }
+        .orange {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 12.5px;
+            color: #ff862a;
+            margin-left: 6.9%;
+            margin-top: 20px;
+            text-shadow: 1px 4px 6px black;
+            animation: fadeInUp2 3s;
+        }
+    }
+    .s1_arrow {
+        display: inline-block;
+        position: relative;
+        bottom: -90%;
+        left: 50%;
+        margin-left: -10px;
+        text-align: center;
+        animation: arrow-show 5s;
+    }
+    .scroll_info {
+        width: 1000%;
+        position: absolute;
+        bottom: 125%;
+        right: -445%;
+        color: #ebebebf6;
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        animation: arrow-show 5s;
+    }
+    .scroll-arrow {
+        width: 10px; 
+        height: 10px; 
+        border-right: 2px solid white; 
+        border-bottom: 2px solid white;
+        transform: rotate(45deg); 
+        -webkit-transform: rotate(45deg); 
+        -moz-transform: rotate(45deg); 
+        -o-transform: rotate(45deg);  
+        -ms-transform: rotate(45deg);
+        animation: arrow-wave 1s infinite;
+        animation-direction: alternate;
+    }
+    .scroll-arrow:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    .scroll-arrow:nth-child(2) {
+        margin-top:6px; animation-delay: 0.2s;
+    }
+    .scroll-arrow:nth-child(3) {
+        margin-top:6px; animation-delay: 0.3s;
+    }
+}
+
+@keyframes arrow-wave {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrow-show {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// 반응형
+@media screen and ( max-width: 1582px) {
+    .main {
+        .main_font {
+            p {
+                font-size: 84px;
+            }
+            .orange {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 1260px) {
+    .main {
+        .main_font {
+            p {
+                font-size: 64px;
+            }
+            .orange {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    .main {
+        .main_font {
+            p {
+                font-size: 50px;
+            }
+            .orange {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .main {
+        .main_font {
+            p {
+                font-size: 40px;
+            }
+            .orange {
+                font-size: 18px;
+                letter-spacing: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .main {
+        .main_font {
+            p {
+                font-size: 30px;
+            }
+            .orange {
+                font-size: 14px;
+                letter-spacing: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .main {
+        .main_font {
+            p {
+                font-size: 28px;
+            }
+            .orange {
+                font-size: 12px;
+                letter-spacing: 8px;
+            }
+        }
+    }
+}

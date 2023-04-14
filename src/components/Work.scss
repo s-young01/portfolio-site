@@ -1,0 +1,95 @@
+// fade-in 효과
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.work {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(27, 29, 33) 0%, rgb(24, 25, 31) 33%, rgb(18, 18, 21) 70%, rgb(29, 31, 36) 100%);
+    position: relative;
+}
+
+// 슬라이더 
+.slick-slider {
+    height: calc(100vh - 129px);
+    .slick-prev, .slick-next {
+        top: 40%;
+        &::before {
+            font-size: 42px;
+            box-shadow: 0 0 20px 5px rgba(250, 250, 250, 0.15);
+            background: rgba(250, 250, 250, 0.1);
+        }
+    }
+    .slick-list {
+        padding-top: 335px;
+        overflow: visible;
+    }
+    .slick-prev {
+        left: 35px;
+    }
+    .slick-next {
+        right: 55px;
+    }
+    .slick-dots {
+        bottom: 70px;
+        li {
+            margin: 0 20px;
+            button:before {
+                font-size: 14px;
+                color: #fff;
+            }    
+        }
+        .slick-active {
+            button:before {
+                opacity: 1;
+                color: #fff;
+                box-shadow: 0 0 15px 3px rgba(250, 250, 250, 0.15);
+                background: rgba(250, 250, 250, 0.07);
+            }
+        }
+    }
+}
+
+// 반응형 
+@media screen and (max-width: 762px) {
+    // 슬라이더 
+    .slick-slider {
+        height: calc(100vh - 129px);
+        .slick-prev, .slick-next {
+            top: 89.5%;
+        }
+        .slick-prev {
+            left: 75px;
+        }
+        .slick-next {
+            right: 95px;
+        }
+        .slick-list {
+            overflow: visible; 
+        }
+        .slick-dots {
+            bottom: 70px;
+            li {
+                margin: 0 20px;
+                button:before {
+                    font-size: 14px;
+                    color: #fff;
+                }    
+            }
+            .slick-active {
+                button:before {
+                    opacity: 1;
+                    color: #fff;
+                    box-shadow: 0 0 15px 3px rgba(250, 250, 250, 0.15);
+                    background: rgba(250, 250, 250, 0.07);
+                }
+            }
+        }
+    }
+}
