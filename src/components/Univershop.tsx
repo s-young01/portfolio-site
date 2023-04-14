@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Projects.scss';
+import './Projects2.scss';
 import { FaSearchPlus } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 import { Link } from 'react-router-dom';
@@ -42,21 +42,19 @@ const Univershop = ({ images }:ImgArr) => {
             : null}
             <div className='content'>
                 <div className='img_zone'>
-                    <div className='img_box'>
-                        <div className='main_box' onClick={onClick_Big}>
-                            <FaSearchPlus className='plus_icon'/>
-                            <img src={mainImg} alt=''/>
-                        </div>
-                        <ul className='sub_boxs'>
-                            {images.map((imageUrl, index) => (
-                                <li key={imageUrl} id={String(index)} 
-                                onClick={() => onClick_Img(imageUrl, index)}>
-                                    <img src={imageUrl} alt='' 
-                                    style={{filter: select === index ? 'brightness(0.7)' : 'none'}}/>
-                                </li>
-                            ))}
-                        </ul>
+                    <div className='main_box' onClick={onClick_Big}>
+                        <FaSearchPlus className='plus_icon'/>
+                        <img src={mainImg} alt=''/>
                     </div>
+                    <ul className='sub_boxs'>
+                        {images.map((imageUrl, index) => (
+                            <li key={imageUrl} id={String(index)} 
+                            onClick={() => onClick_Img(imageUrl, index)}>
+                                <img src={imageUrl} alt='' 
+                                style={{filter: select === index ? 'brightness(0.7)' : 'none'}}/>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
                 <div className='info_zone'>
                     <span className='font'>UNIVERSHOP</span>

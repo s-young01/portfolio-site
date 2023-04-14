@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Work.scss';
+import './Work2.scss';
 import Univershop from './Univershop';
 import Moviezip from './Moviezip';
 import Writtenforest from './Writtenforest';
@@ -26,8 +26,8 @@ export default class Work extends Component<ImgArr> {
             slidesToScroll: 1
         };
         return (
-            <div className='work'>
-              <h1>PROJECTS</h1>
+            <div className='work'> 
+                <h1>PROJECTS</h1>
                 <Slider {...settings}>
                     <Univershop images={images} />
                     <Moviezip images2={images2} />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Projects.scss';
+/* import './Projects.scss'; */
 import { FaSearchPlus } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 import { Link } from 'react-router-dom';

@@ -1,46 +1,27 @@
-// fade-in 효과
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .work {
     width: 100%;
     height: 100vh;
-    position: relative;
     background: linear-gradient(rgb(27, 29, 33) 0%, rgb(24, 25, 31) 33%, rgb(18, 18, 21) 70%, rgb(29, 31, 36) 100%);
 }
 
-
-
-
-/* // 슬라이더 
 .slick-slider {
-    height: calc(100vh - 129px);
     .slick-prev, .slick-next {
-        top: 40%;
         &::before {
             font-size: 42px;
-            box-shadow: 0 0 20px 5px rgba(250, 250, 250, 0.15);
+            box-shadow: 0 0 15px 3px rgba(250, 250, 250, 0.15);
             background: rgba(250, 250, 250, 0.1);
         }
     }
-    .slick-list {
-        padding-top: 335px;
-        overflow: visible;
-    }
     .slick-prev {
-        left: 35px;
+        left: 55px;
+        z-index: 2;
     }
     .slick-next {
         right: 55px;
+        z-index: 2;
     }
     .slick-dots {
-        bottom: 70px;
+        bottom: -80px;
         li {
             margin: 0 20px;
             button:before {
@@ -57,27 +38,27 @@
             }
         }
     }
-} */
+}
 
 // 반응형 
 @media screen and (max-width: 762px) {
     // 슬라이더 
     .slick-slider {
-        height: calc(100vh - 129px);
         .slick-prev, .slick-next {
-            top: 89.5%;
+            top: 110%;
+            &::before {
+                font-size: 42px;
+                box-shadow: 0 0 15px 3px rgba(250, 250, 250, 0.15);
+                background: rgba(250, 250, 250, 0.1);
+            }
         }
         .slick-prev {
-            left: 75px;
+            left: 105px;
         }
         .slick-next {
-            right: 95px;
-        }
-        .slick-list {
-            overflow: visible; 
+            right: 125px;
         }
         .slick-dots {
-            bottom: 70px;
             li {
                 margin: 0 20px;
                 button:before {
