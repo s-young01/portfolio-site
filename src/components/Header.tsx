@@ -53,19 +53,13 @@ const Header = () => {
         <div className='header'>
             <ul className='navi'>
                 <li onClick={Scroll_Intro}>
-                    <span className='light'>〈</span>
                     <span className='color'>INTRO</span>
-                    <span className='light'>／〉</span>
                 </li>
                 <li onClick={Scroll_Skills}>
-                    <span className='light'>〈</span>
                     <span className='color'>SKILLS</span>
-                    <span className='light'>／〉</span>
                 </li>
                 <li onClick={Scroll_Projects}>
-                    <span className='light'>〈</span>
                     <span className='color'>PROJECTS</span>
-                    <span className='light'>／〉</span>
                 </li>
             </ul>
             <ul className={isopen ? 'change' : 'movile'} onClick={onClick_Menu}>
@@ -76,20 +70,14 @@ const Header = () => {
             <div className={isopen ? 'menu' : 'close_menu'}>
                 <nav>
                     <ul className='menu_list'>
-                        <li onClick={Scroll_Intro2}>
-                            <span className='light'>〈</span>
-                            <span className='color'>INTRO</span>
-                            <span className='light'>／〉</span>
+                        <li onClick={Scroll_Intro2}>    
+                            <span className='color'>INTRO</span>   
                         </li>
-                        <li onClick={Scroll_Skills2}>
-                            <span className='light'>〈</span>
-                            <span className='color'>SKILLS</span>
-                            <span className='light'>／〉</span>
+                        <li onClick={Scroll_Skills2}>   
+                            <span className='color'>SKILLS</span>  
                         </li>
-                        <li onClick={Scroll_Projects2}>
-                            <span className='light'>〈</span>
+                        <li onClick={Scroll_Projects2}>    
                             <span className='color'>PROJECTS</span>
-                            <span className='light'>／〉</span>
                         </li>
                     </ul>
                 </nav>

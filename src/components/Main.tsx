@@ -4,15 +4,9 @@ import './Main.scss';
 const Main = () => {
     return (
         <div className='main'>
-            <div/>
             <div className='main_font'>
                 <p className='middle'>
-                    <span className='blue'>｛</span>
-                    <span className='skyblue'>FRONT-END</span>
-                    <span className='white'>: </span>
-                    <span className='lightgreen'>DEVELOPER</span>
-                    <span className='blue'>｝</span>
-                    <span className='white'>;</span>
+                    <span className='skyblue'>FRONT-END DEVELOPER</span>
                 </p>
                 <p className='orange'>SE-YOUNG'S PORTFOLIO</p>
             </div>

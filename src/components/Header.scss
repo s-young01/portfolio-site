@@ -8,7 +8,7 @@
         height: auto;
         display: flex;
         li {
-            padding: 0 12px;
+            margin: 0 14px;
             letter-spacing: 1.5px;
             cursor: pointer;
             &:hover {
@@ -19,9 +19,6 @@
             span {
                 font-size: 20px;
                 font-weight: 600;
-            }
-            .light {
-                color: #ECF9FF;
             }
             .color {
                 margin-left: 3px;
@@ -44,13 +41,13 @@
         }
         .movile {
             display: block !important;
-            width: 35px;
+            width: 30px;
             height: auto;
             cursor: pointer;
             .bar {
                 width: auto;
                 height: 3px;
-                margin: 9px 0;
+                margin: 7px 0;
                 background-color: #ECF9FF;
                 transition: 0.3s;
                 box-shadow:  1px 2px 4px black;
@@ -58,7 +55,7 @@
         }
         .change {
             display: block !important;
-            width: 35px;
+            width: 30px;
             height: auto;
             cursor: pointer;
             .bar {

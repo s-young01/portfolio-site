@@ -23,42 +23,31 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgb(27, 29, 33) 0%, rgb(24, 25, 31) 33%, rgb(18, 18, 21) 70%, rgb(29, 31, 36) 100%);
-    position: relative;
     font-weight: bold;
+    text-align: center;
+    position: relative;
     .main_font {
+        width: 100%;
         position: absolute;
-        top: 35%;
-        left: 3%;
-        p {
-            font-size: 92px;
-        }
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         .middle {
-            display: flex;
             font-weight: bold;
             letter-spacing: 2px;
             text-shadow: 1px 6px 8px black;
             animation: fadeInUp 1s;
-            .blue {
-                color: rgb(30, 139, 222);
-            }
-            .white {
-                margin-left: 5px;
-                color: #fff;
-            }
             .skyblue {
                 color: rgb(181, 244, 251);
+                font-size: 108px;
             } 
-            .lightgreen {
-                color: rgb(162, 234, 140);
-            }
         }
         .orange {
             font-size: 28px;
             font-weight: 600;
             letter-spacing: 12.5px;
             color: #ff862a;
-            margin-left: 6.9%;
-            margin-top: 20px;
+            margin-top: 16px;
             text-shadow: 1px 4px 6px black;
             animation: fadeInUp2 3s;
         }
@@ -66,8 +55,8 @@
     .s1_arrow {
         display: inline-block;
         position: relative;
-        bottom: -90%;
-        left: 50%;
+        bottom: -92%;
+        left: 0;
         margin-left: -10px;
         text-align: center;
         animation: arrow-show 5s;
@@ -141,8 +130,10 @@
 @media screen and ( max-width: 1582px) {
     .main {
         .main_font {
-            p {
-                font-size: 84px;
+            .middle {
+                .skyblue {
+                    font-size: 94px;
+                }
             }
             .orange {
                 font-size: 24px;
@@ -154,8 +145,10 @@
 @media screen and ( max-width: 1260px) {
     .main {
         .main_font {
-            p {
-                font-size: 64px;
+            .middle {
+                .skyblue {
+                    font-size: 74px;
+                }
             }
             .orange {
                 font-size: 24px;
@@ -167,11 +160,14 @@
 @media screen and (max-width: 1006px) {
     .main {
         .main_font {
-            p {
-                font-size: 50px;
+            .middle {
+                .skyblue {
+                    font-size: 54px;
+                }
             }
             .orange {
-                font-size: 22px;
+                font-size: 20px;
+                margin-top: 12px;
             }
         }
     }
@@ -180,8 +176,10 @@
 @media screen and (max-width: 762px) {
     .main {
         .main_font {
-            p {
-                font-size: 40px;
+            .middle {
+                .skyblue {
+                    font-size: 44px;
+                }
             }
             .orange {
                 font-size: 18px;
@@ -194,12 +192,15 @@
 @media screen and (max-width: 622px) {
     .main {
         .main_font {
-            p {
-                font-size: 30px;
+            .middle {
+                .skyblue {
+                    font-size: 34px;
+                }
             }
             .orange {
                 font-size: 14px;
                 letter-spacing: 8px;
+                margin-top: 10px;
             }
         }
     }
@@ -208,12 +209,15 @@
 @media screen and (max-width: 476px) {
     .main {
         .main_font {
-            p {
-                font-size: 28px;
+            .middle {
+                .skyblue {
+                    font-size: 24px;
+                }
             }
             .orange {
                 font-size: 12px;
-                letter-spacing: 8px;
+                letter-spacing: 5px;
+                margin-top: 8px;
             }
         }
     }

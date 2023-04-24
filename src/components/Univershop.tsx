@@ -79,13 +79,13 @@ const Univershop = ({ images }:ImgArr) => {
                     </nav>
                     <nav className='btn_zone'>
                         <button className='to_site'>
-                            <Link to='http://corona0113.dothome.co.kr/teamplay/'>
+                            <Link to='http://corona0113.dothome.co.kr/teamplay/' target='_blank'>
                                 <RiExternalLinkLine className='link_icon'/>
                                 <span>사이트 바로가기</span>
                             </Link>
                         </button>
                         <button className='to_git'>
-                            <Link to='https://github.com/s-young01/PHP-UNIVERSHOP-Team-'>
+                            <Link to='https://github.com/s-young01/PHP-UNIVERSHOP-Team-' target='_blank'>
                                 <IoLogoGithub className='link_icon git'/>
                                 <span>github</span>
                             </Link>

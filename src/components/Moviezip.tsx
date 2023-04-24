@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-/* import './Projects.scss'; */
+import './Projects2.scss';
 import { FaSearchPlus } from "react-icons/fa";
 import { IoIosClose } from "react-icons/io";
 import { Link } from 'react-router-dom';
@@ -80,13 +80,13 @@ const Moviezip = ({ images2 }:ImgArr) => {
                     </nav>
                     <nav className='btn_zone'>
                         <button className='to_site'>
-                            <Link to='https://movie-react-eight.vercel.app/'>
+                            <Link to='https://movie-react-eight.vercel.app/' target='_blank'>
                                 <RiExternalLinkLine className='link_icon'/>
                                 <span>사이트 바로가기</span>
                             </Link>
                         </button>
                         <button className='to_git'>
-                            <Link to='https://github.com/s-young01/movie-react'>
+                            <Link to='https://github.com/s-young01/movie-react' target='_blank'>
                                 <IoLogoGithub className='link_icon'/>
                                 <span>github</span>
                             </Link>
