@@ -86,7 +86,7 @@ const Moviezip = ({ images2 }:ImgArr) => {
                             </Link>
                         </button>
                         <button className='to_git'>
-                            <Link to='https://github.com/s-young01/movie-react' target='_blank'>
+                            <Link to='https://github.com/s-young01/movie-react-1' target='_blank'>
                                 <IoLogoGithub className='link_icon'/>
                                 <span>github</span>
                             </Link>
